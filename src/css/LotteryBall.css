@@ -1,0 +1,54 @@
+.recommended-number::before {
+  content: "";
+  position: absolute;
+  transform: rotate(-30deg);
+  top: 5px;
+  left: 8px;
+  width: 12px;
+  height: 6px;
+  background: #fff;
+  border-radius: 12px / 6px;
+}
+
+.recommended-number {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 4px solid black;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 2;
+  color: white;
+}
+
+.recommended-number::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset -4px -2px 0 1px rgba(27, 28, 31, 0.1);
+  border-radius: 50%;
+}
+
+.recommended-number.red {
+  background: rgb(227, 47, 25);
+}
+.recommended-number.sky {
+  background: rgb(43, 189, 244);
+}
+.recommended-number.yellow {
+  background: rgb(240, 178, 58);
+}
+.recommended-number.purple {
+  background: rgb(115, 57, 133);
+}
+.recommended-number.green {
+  background: rgb(162, 204, 115);
+}
+.recommended-number.pink {
+  background: rgb(237, 102, 130);
+}
